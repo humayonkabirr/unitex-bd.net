@@ -84,7 +84,8 @@
         }
 
         .service .owl-item {
-            filter: hue-rotate(235deg) brightness(.55) invert(.33);
+            /* filter: hue-rotate(235deg) brightness(.55) invert(.33); */
+            filter: grayscale(100%);
             transition: transform 0.3s ease;
         }
 
@@ -94,6 +95,7 @@
             transform: scale(1.2);
             z-index: 10;
             filter: unset;
+            font-weight: bold;
         }
 
         .service:before {
@@ -106,12 +108,13 @@
             width: 190px;
             background: linear-gradient(118.64deg, rgba(255, 243, 233, .6) -4.78%, hsla(0, 0%, 100%, .6) 64.5%, rgba(255, 243, 233, .6) 111.91%);
             border: 1px solid #fff;
-            box-shadow: 0 4px 80px rgba(242, 79, 65, .17);
+            box-shadow: 0 4px 80px rgb(52 187 123 / 24%);
             -webkit-backdrop-filter: blur(35px);
             backdrop-filter: blur(35px);
             /* border-radius: 320px; */
             border-radius: 32px;
         }
+ 
     </style>
 
 </head>
@@ -164,6 +167,63 @@
     <!-- end banner section  -->
 
 
+    <!-- start service section -->
+    <div class="max-w-5xl px-4 mx-auto mb-16">
+        <div class="owl-carousel service">
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/window-cleaning.png"
+                    alt="Maid Service">
+                <p class="mt-2 text-sm">Maid Service</p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/male-teacher.png"
+                    alt="Maid Service">
+                <p class="mt-2 text-sm">Teacher</p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/mop.png"
+                    alt="Cleaning Solution">
+                <p class="mt-2 text-sm">Cleaning Solution</p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/businessman.png" alt="Peon ">
+                <p class="mt-2 text-sm">Peon </p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/engineer.png" alt="Caretaker">
+                <p class="mt-2 text-sm">Caretaker</p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/road.png" alt="Driver ">
+                <p class="mt-2 text-sm">Driver </p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#" class="flex flex-col items-center p-4 text-center transition duration-1000">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/mechanic.png"
+                    alt="Electrician">
+                <p class="mt-2 text-sm">Electrician</p>
+            </a>
+            <!-- Category Item 1 -->
+            <a href="#"
+                class="flex flex-col items-center p-4 text-center transition duration-1000 hover:text-white hover:bg-slate-500">
+                <img class="object-contain w-16 h-16"
+                    src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
+                    alt="All services">
+                <p class="mt-2 text-sm">All services</p>
+            </a>
+
+
+        </div>
+    </div>
+    <!-- end service section -->
+
+
     <!-- start category section  -->
     <div class="max-w-5xl px-4 mx-auto my-6">
         <div class="w-full my-4">
@@ -173,57 +233,48 @@
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="assets/images/categories/icons/1732528397_maidservice_52x52.webp" alt="Maid Service">
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/window-cleaning.png"
+                    alt="Maid Service">
                 <p class="mt-2 text-sm">Maid Service</p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1583681524_tiwnn_52x52.webp"
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/male-teacher.png"
                     alt="Maid Service">
-                <p class="mt-2 text-sm">Appliance Repair</p>
+                <p class="mt-2 text-sm">Teacher</p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1583684923_tiwnn_52x52.webp"
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/mop.png"
                     alt="Cleaning Solution">
                 <p class="mt-2 text-sm">Cleaning Solution</p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1599673571_tiwnn_52x52.webp"
-                    alt="Beauty & Wellness ">
-                <p class="mt-2 text-sm">Beauty & Wellness </p>
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/businessman.png" alt="Peon ">
+                <p class="mt-2 text-sm">Peon </p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1590661286_tiwnn_52x52.webp"
-                    alt="Men's Care & Salon">
-                <p class="mt-2 text-sm">Men's Care & Salon</p>
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/engineer.png" alt="Caretaker">
+                <p class="mt-2 text-sm">Caretaker</p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1732010776_tiwnn_52x52.webp"
-                    alt="Shifting ">
-                <p class="mt-2 text-sm">Shifting </p>
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/road.png" alt="Driver ">
+                <p class="mt-2 text-sm">Driver </p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
                 class="flex flex-col items-center p-4 text-center transition duration-1000 border hover:text-white hover:bg-slate-500">
-                <img class="object-contain w-16 h-16"
-                    src="https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/icons_png/1590661286_tiwnn_52x52.webp"
-                    alt="Men's Care & Salon">
-                <p class="mt-2 text-sm">Men's Care & Salon</p>
+                <img class="object-contain w-16 h-16" src="assets/images/categories/icons/mechanic.png"
+                    alt="Electrician">
+                <p class="mt-2 text-sm">Electrician</p>
             </a>
             <!-- Category Item 1 -->
             <a href="#"
@@ -236,89 +287,6 @@
         </div>
     </div>
     <!-- end category section  -->
-
-    <!-- start service section -->
-    <div class="max-w-5xl px-4 mx-auto my-6">
-        <div class="w-full my-4">
-            <h1 class="text-2xl font-bold">Service</h1>
-        </div>
-        <div class="owl-carousel service">
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="House Shifting Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        House Shifting Services</h1>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Gas Stove/Burner Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Gas Stove/Burner Services</h1>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Plumbing & Sanitary Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Plumbing & Sanitary Services</h1>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Plumbing & Sanitary Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Plumbing & Sanitary Services</h1>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Plumbing & Sanitary Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Salon Cares</h1>
-                </a>
-            </div>
-
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Plumbing & Sanitary Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Plumbing & Sanitary Services</h1>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="#">
-                    <img class="rounded-full w-14 h-14"
-                        src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/all-services.svg"
-                        alt="Plumbing & Sanitary Services">
-                    <h1
-                        class="mt-2 text-sm font-semibold text-gray-500 text-center transition-colors duration-300 hover:text-blue-500">
-                        Plumbing & Sanitary Services</h1>
-                </a>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- end service section -->
 
     <!-- start For Your Home section -->
     <div class="max-w-5xl px-4 mx-auto my-6">
@@ -545,47 +513,42 @@
 
             <h1 class="text-xl md:text-4xl font-bold text-gray-500">Because we care about your safety.. </h1>
 
-
-
-            <div class="grid gap-4 my-6 md:grid-cols-2">
+            <div class="grid gap-4 md:grid-cols-2">
                 <!-- left side  -->
-                <div class="">
-                    <div class="grid grid-cols-2 gap-4">
-                        <!-- Card 1 -->
-                        <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
-                            <img class="w-12 h-12"
-                                src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_mask.png"
-                                alt="Ensuring Masks" class="mx-auto mb-2">
-                            <p class="text-gray-700">Ensuring Masks</p>
-                        </div>
-                        <!-- Card 1 -->
-                        <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
-                            <img class="w-12 h-12"
-                                src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_24_7.png"
-                                alt="24/7 Support" class="mx-auto mb-2">
-                            <p class="text-gray-700"> 24/7 Support</p>
-                        </div>
-                        <!-- Card 1 -->
-                        <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
-                            <img class="w-12 h-12"
-                                src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_sanitized.png"
-                                alt="Sanitising Hands & Equipment" class="mx-auto mb-2">
-                            <p class="text-gray-700"> Sanitising Hands & Equipment</p>
-                        </div>
-                        <!-- Card 1 -->
-                        <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
-                            <img class="w-12 h-12"
-                                src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_sanitized.png"
-                                alt="Ensuring Gloves" class="mx-auto mb-2">
-                            <p class="text-gray-700">Ensuring Gloves</p>
-                        </div>
+                <div class="flex flex-col space-y-2 justify-center">
+                    <!-- Card 1 -->
+                    <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
+                        <img class="w-10 h-10"
+                            src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_mask.png"
+                            alt="Ensuring Masks" class="mx-auto mb-2">
+                        <p class="text-gray-700">Ensuring Masks</p>
                     </div>
-
+                    <!-- Card 1 -->
+                    <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
+                        <img class="w-10 h-10"
+                            src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_24_7.png"
+                            alt="24/7 Support" class="mx-auto mb-2">
+                        <p class="text-gray-700"> 24/7 Support</p>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
+                        <img class="w-10 h-10"
+                            src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_sanitized.png"
+                            alt="Sanitising Hands & Equipment" class="mx-auto mb-2">
+                        <p class="text-gray-700"> Sanitising Hands & Equipment</p>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="flex items-center p-4 space-x-2 bg-white rounded-lg shadow-md">
+                        <img class="w-10 h-10"
+                            src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_sanitized.png"
+                            alt="Ensuring Gloves" class="mx-auto mb-2">
+                        <p class="text-gray-700">Ensuring Gloves</p>
+                    </div>
                 </div>
 
                 <!-- right side  -->
                 <div class="">
-                    <img src="assets/images/others/why-choose-us.webp" alt="Team" class="w-full rounded-lg shadow-md">
+                    <img src="assets/images/others/undraw_complete-design_pzh6.svg" alt="Team" class="">
                 </div>
             </div>
 
@@ -771,8 +734,7 @@
                 <!-- left side -->
                 <ul class="flex flex-col justify-end">
                     <li class="flex items-center space-x-4 mb-4">
-                        <div
-                            class="flex h-14 w-14 items-center justify-center rounded border border-white text-white">
+                        <div class="flex h-14 w-14 items-center justify-center rounded border border-white text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="w-6 h-6">
@@ -790,8 +752,7 @@
                         </div>
                     </li>
                     <li class="flex items-center space-x-4 mb-4">
-                        <div
-                            class="flex h-14 w-14 items-center justify-center rounded border border-white text-white">
+                        <div class="flex h-14 w-14 items-center justify-center rounded border border-white text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="w-6 h-6">
@@ -809,8 +770,7 @@
                         </div>
                     </li>
                     <li class="flex items-center space-x-4 mb-4">
-                        <div
-                            class="flex items-center justify-center w-14 h-14 text-white border rounded border-white">
+                        <div class="flex items-center justify-center w-14 h-14 text-white border rounded border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="w-6 h-6">
