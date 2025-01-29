@@ -117,7 +117,7 @@
         .testimonials .owl-nav {
             width: 100%;
             position: unset;
-            justify-content: center; 
+            justify-content: center;
             margin-top: 20px;
         }
 
@@ -162,7 +162,17 @@
                 <img src="assets/images/logo.png" alt="logo">
             </a>
 
-            <ul class="flex space-x-4 items-center font-bold text-gray-600">
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-purple-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="hidden md:flex space-x-4 items-center font-bold text-gray-600 ">
                 <li>
                     <a class="hover:text-black hover:border-b-2 border-black" href="#">Home</a>
                 </li>
@@ -180,6 +190,18 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-bold">
+                <a href="#" class="block text-gray-800 hover:text-green-600 tracking-[.08em]">Home</a>
+                <a href="#" class="block text-gray-800 hover:text-green-600 tracking-[.08em]">About</a>
+                <a href="#" class="block text-gray-800 hover:text-green-600 tracking-[.08em]">Services</a>
+                <a href="#" class="block text-gray-800 hover:text-green-600 tracking-[.08em]">Contact</a>
+                <a href="#" class="block text-gray-800 hover:text-green-600 tracking-[.08em]">Login</a>
+            </div>
+        </div>
+
     </nav>
     <!-- end nav section -->
 
@@ -261,7 +283,7 @@
 
     <!-- start service section  -->
     <div class="max-w-5xl px-4 mx-auto my-6">
-        <div class="w-full my-4"> 
+        <div class="w-full my-4">
             <h1 class="text-xl md:text-2xl font-bold text-gray-500">Services</h1>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 bg-white border">
@@ -327,16 +349,19 @@
     <div class="relative py-10 my-12 bg-[url('assets/images/others/background2.jpg')] bg-cover bg-center">
         <div class="relative max-w-5xl px-4 mx-auto ">
             <h1 class="uppercase text-center text-xl md:text-4xl font-bold text-gray-500">Worker Register</h1>
-            <p class="text-center text-md md:text-lg text-gray-600 py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="text-center text-md md:text-lg text-gray-600 py-4">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.
                 Officia velit numquam laborum corrupti dolorem.
                 Accusantium iusto reiciendis sapiente vel inventore, omnis dolorem eos distinctio dicta rerum ad,
                 asperiores nemo similique.</p>
 
             <div class="text-center">
-                <button class="relative px-4 md:px-6 py-2 md:py-3 text-white bg-green-500 rounded-lg shadow-lg group overflow-hidden">
+                <button
+                    class="relative px-4 md:px-6 py-2 md:py-3 text-white bg-green-500 rounded-lg shadow-lg group overflow-hidden">
                     <span
                         class="absolute inset-0 w-full h-full transition-transform duration-300 transform scale-100 bg-green-600 group-hover:scale-110"></span>
-                    <span class="relative z-10 text-sm md:text-lg font-bold uppercase tracking-[.20em]">Register Now</span>
+                    <span class="relative z-10 text-sm md:text-lg font-bold uppercase tracking-[.20em]">Register
+                        Now</span>
                 </button>
 
             </div>
@@ -653,11 +678,13 @@
                         eveniet similique sequi! Vel?
                     </p>
 
- 
-                    <button class="relative px-4 md:px-6 py-2 md:py-3 text-white bg-green-500 rounded-lg shadow-lg group overflow-hidden">
+
+                    <button
+                        class="relative px-4 md:px-6 py-2 md:py-3 text-white bg-green-500 rounded-lg shadow-lg group overflow-hidden">
                         <span
                             class="absolute inset-0 w-full h-full transition-transform duration-300 transform scale-100 bg-green-600 group-hover:scale-110"></span>
-                        <span class="relative z-10 text-sm md:text-lg font-bold uppercase tracking-[.20em]">Download Apps</span>
+                        <span class="relative z-10 text-sm md:text-lg font-bold uppercase tracking-[.20em]">Download
+                            Apps</span>
                     </button>
                 </div>
             </div>
@@ -701,7 +728,7 @@
                         <p class="mt-6">
                             <a href="#" class="font-medium text-gray-600 hover:text-green-900">Learn more about
                                 our users &rarr;</a>
-                        </p> 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -730,7 +757,7 @@
                         <p class="mt-6">
                             <a href="#" class="font-medium text-gray-600 hover:text-green-900">Learn more about
                                 our users &rarr;</a>
-                        </p> 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -759,7 +786,7 @@
                         <p class="mt-6">
                             <a href="#" class="font-medium text-gray-600 hover:text-green-900">Learn more about
                                 our users &rarr;</a>
-                        </p> 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -788,7 +815,7 @@
                         <p class="mt-6">
                             <a href="#" class="font-medium text-gray-600 hover:text-green-900">Learn more about
                                 our users &rarr;</a>
-                        </p> 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -817,10 +844,10 @@
                         <p class="mt-6">
                             <a href="#" class="font-medium text-gray-600 hover:text-green-900">Learn more about
                                 our users &rarr;</a>
-                        </p> 
+                        </p>
                     </div>
                 </div>
-            </div> 
+            </div>
 
         </div>
     </div>
@@ -1014,8 +1041,18 @@
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
 
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <script>
+
 
         $('.recommended').owlCarousel({
             loop: true,
