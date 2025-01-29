@@ -89,8 +89,6 @@
             transition: transform 0.3s ease;
         }
 
-
-
         .service .owl-item.active.center {
             transform: scale(1.2);
             z-index: 10;
@@ -113,6 +111,43 @@
             backdrop-filter: blur(35px);
             /* border-radius: 320px; */
             border-radius: 32px;
+        }
+
+
+        .testimonials .owl-nav {
+            width: 100%;
+            position: unset;
+            justify-content: center; 
+            margin-top: 20px;
+        }
+
+        .testimonials .owl-item {
+            transition: transform 0.3s ease;
+            opacity: 0.26;
+        }
+
+        .testimonials .owl-item.active.center {
+            z-index: 10;
+            opacity: unset;
+            font-weight: bold;
+        }
+
+        .testimonials .owl-nav .owl-next {
+            background-color: #25a267;
+            color: white;
+            position: unset;
+            padding: 3px 13px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .testimonials .owl-nav .owl-prev {
+            background-color: #25a267;
+            position: unset;
+            color: white;
+            padding: 3px 13px;
+            border-radius: 50%;
+            border: 3px solid white;
         }
     </style>
 
@@ -220,8 +255,6 @@
                     alt="Electrician">
                 <p class="mt-2 text-sm">Electrician</p>
             </a>
-
-
         </div>
     </div>
     <!-- end category section -->
@@ -532,7 +565,8 @@
         <div class="max-w-5xl px-4 mx-auto my-6">
             <p class="text-sm text-gray-500 md:text-md capitalize text-center md:text-left">Why Choose US</p>
 
-            <h1 class="text-xl md:text-4xl font-bold text-gray-500 capitalize text-center md:text-left">Because we ensure our quality.</h1>
+            <h1 class="text-xl md:text-4xl font-bold text-gray-500 capitalize text-center md:text-left">Because we
+                ensure our quality.</h1>
 
             <div class="grid gap-4 md:grid-cols-2 mt-6">
                 <!-- left side  -->
@@ -597,7 +631,8 @@
         <div class="max-w-5xl px-4 mx-auto my-6">
             <p class="text-sm text-gray-500 md:text-md capitalize text-center md:text-left">Get the Apps</p>
 
-            <h1 class="text-xl md:text-4xl font-bold text-gray-500 text-center md:text-left">Download Our Man Power Apps</h1>
+            <h1 class="text-xl md:text-4xl font-bold text-gray-500 text-center md:text-left">Download Our Man Power Apps
+            </h1>
 
 
 
@@ -632,45 +667,117 @@
     </div>
     <!-- end Get the Apps -->
 
-    <!-- start us know 24/7 -->
-    <div class="mt-32 bg-slate-200">
-        <div class="relative flex items-center justify-between max-w-5xl px-4 mx-auto">
-            <!-- Text Section -->
-            <div class="flex flex-col items-start py-8 space-y-4">
-                <!-- Heading -->
-                <h1 class="text-4xl font-semibold text-gray-500">
-                    Can’t find your desired service?
-                </h1>
-                <p class="text-2xl font-semibold text-gray-400">
-                    Let us know 24/7 in +880888888888
-                </p>
+    <!-- start testimonials -->
+    <div class="bg-slate-100 py-10">
+        <div class="max-w-5xl px-4 mx-auto">
+            <p class="text-sm text-gray-500 md:text-md capitalize text-center md:text-left">Some Happy Face.</p>
+            <h1 class="text-xl md:text-4xl font-bold text-gray-500 text-center md:text-left">
+                Our's Client Reaction
+            </h1>
 
-                <!-- Buttons -->
-                <div class="flex space-x-4">
-                    <button class="px-4 py-2 text-white bg-pink-600 rounded-md hover:bg-pink-700">
-                        Request for service
-                    </button>
-                    <button class="px-4 py-2 text-white bg-pink-600 rounded-md hover:bg-pink-700">
-                        Call +880888888888
-                    </button>
+        </div>
+        <div class="owl-carousel px-4 testimonials mt-6">
+            <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden border border-slate-400">
+                <div class="h-56 lg:h-auto lg:w-5/12 relative flex items-end justify-center">
+                    <img class="absolute h-full w-full object-cover" src="assets/images/categories/icons/engineer.png"
+                        alt="Caretaker" />
+                    <div class="absolute inset-0 bg-slate-600 opacity-75"></div>
+                    <div class="relative leading-none text-white pb-3">
+                        <h1 class="text-xl">Mohammad Ali</h1>
+                        <p>Eng.</p>
+                    </div>
+                </div>
+                <div class="relative lg:w-7/12">
+                    <svg class="absolute h-full text-white w-24 -ml-12" fill="currentColor" viewBox="0 0 100 100"
+                        preserveAspectRatio="none">
+                        <polygon points="50,0 100,0 50,100 0,100" />
+                    </svg>
+                    <div class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed text-md">
+                        <p>
+                            As <strong class="text-green-600 font-medium">Slack</strong> grows rapidly, using
+                            Stripe
+                            helps them scale payments easily &mdash; supporting everything from getting paid by
+                            users around the world to enabling ACH payments for corporate customers.
+                        </p>
+                        <p class="mt-6">
+                            <a href="#" class="font-medium text-green-600 hover:text-green-900">Learn more about
+                                our users &rarr;</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- Image Section -->
-            <div class="absolute" style="bottom: 0; right: 0;">
-                <img class=""
-                    src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/jpg/service-request.png"
-                    alt="Customer Service" />
+
+            <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden border border-slate-400">
+                <div class="h-56 lg:h-auto lg:w-5/12 relative flex items-end justify-center">
+                    <img class="absolute h-full w-full object-cover" src="assets/images/categories/icons/engineer.png"
+                        alt="Caretaker" />
+                    <div class="absolute inset-0 bg-slate-600 opacity-75"></div>
+                    <div class="relative leading-none text-white pb-3">
+                        <h1 class="text-xl">Mohammad Unknown</h1>
+                        <p>Eng.</p>
+                    </div>
+                </div>
+                <div class="relative lg:w-7/12">
+                    <svg class="absolute h-full text-slate-200 w-24 -ml-12" fill="currentColor" viewBox="0 0 100 100"
+                        preserveAspectRatio="none">
+                        <polygon points="50,0 100,0 50,100 0,100" />
+                    </svg>
+                    <div class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed text-md">
+                        <p>
+                            As <strong class="text-bg-green-600 font-medium">Slack</strong> grows rapidly, using
+                            Stripe
+                            helps them scale payments easily &mdash; supporting everything from getting paid by
+                            users around the world to enabling ACH payments for corporate customers.
+                        </p>
+                        <p class="mt-6">
+                            <a href="#" class="font-medium text-green-600 hover:text-green-900">Learn more about
+                                our users &rarr;</a>
+                        </p>
+                    </div>
+                </div>
             </div>
+
+            <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden border border-slate-400">
+                <div class="h-56 lg:h-auto lg:w-5/12 relative flex items-end justify-center">
+                    <img class="absolute h-full w-full object-cover" src="assets/images/categories/icons/engineer.png"
+                        alt="Caretaker" />
+                    <div class="absolute inset-0 bg-slate-600 opacity-75"></div>
+                    <div class="relative leading-none text-white pb-3">
+                        <h1 class="text-xl">Mohammad Yusuf</h1>
+                        <p>Eng.</p>
+                    </div>
+                </div>
+                <div class="relative lg:w-7/12">
+                    <svg class="absolute h-full text-slate-200 w-24 -ml-12" fill="currentColor" viewBox="0 0 100 100"
+                        preserveAspectRatio="none">
+                        <polygon points="50,0 100,0 50,100 0,100" />
+                    </svg>
+                    <div class="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed text-md">
+                        <p>
+                            As <strong class="text-bg-green-600 font-medium">Slack</strong> grows rapidly, using
+                            Stripe
+                            helps them scale payments easily &mdash; supporting everything from getting paid by
+                            users around the world to enabling ACH payments for corporate customers.
+                        </p>
+                        <p class="mt-6">
+                            <a href="#" class="font-medium text-green-600 hover:text-green-900">Learn more about
+                                our users &rarr;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- end us know 24/7 -->
+    <!-- end testimonials -->
 
     <!-- start Get in Touch section -->
     <div class="py-10">
         <div class="max-w-5xl px-4 mx-auto my-6">
             <p class="text-sm text-gray-500 md:text-md capitalize text-center md:text-left">Get in Touch</p>
 
-            <h1 class="text-xl md:text-4xl font-bold text-gray-500 text-center md:text-left">Lets talk about everything!</h1>
+            <h1 class="text-xl md:text-4xl font-bold text-gray-500 text-center md:text-left">Lets talk about everything!
+            </h1>
 
 
 
@@ -846,7 +953,7 @@
 
 
 
-    
+
     <!-- Include jQuery before Owl Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
@@ -921,8 +1028,30 @@
                 }
             }
         });
+
+        $('.testimonials').owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                },
+                1000: {
+                    items: 2,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
     </script>
-    
+
 </body>
 
 </html>
